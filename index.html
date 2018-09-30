@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <link rel="stylesheet" href="bs/css/bootstrap.css">
+        <script src="bs/js/jquery.min.js"></script>
+        <script src="bs/js/bootstrap.js"></script>
+        <script src="bs/js/holder.min.js"></script>
+</head>
+<style>
+	*{
+		font-family: 微软雅黑;
+	}
+	body{
+		color: #686868;
+	}
+	/*导航*/
+	#myNav{
+		background-color: #148cca;
+	}
+	#myNav a{
+		color: #fff;
+		font-weight: bold;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle{
+		background-color: transparent;
+		border: none;
+	}
+	.navbar-default .navbar-toggle:hover{
+		background-color: transparent;
+	}
+	@media(max-width: 768px){
+		.myloin{
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			font-size: 1em;
+		}
+		p{
+			font-size: 12px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		h3{
+			font-size: 14px;
+		}
+		li{
+			font-size: 14px;
+		}
+		#myP{
+			margin-top: 10px;
+		}
+		.myimg{
+			width: 50%;
+		}
+	}
+
+	.cont{
+		height: 300px;
+		padding-top: 30px;
+	}
+	.mysea{
+		color: #2aaaec;
+	}
+	.myP{
+		font-size: 1.2em;
+		margin-top: 80px;
+	}
+</style>
+<body>
+<!-- 头部 -->
+<div>
+<nav class="navbar navbar-default navbar-fixed-top  " id="myNav">
+	<div class="container">
+		<div class="navbar-header">
+			 <a href="#"><img src="img/logo.png"></a>
+				<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		</div>
+		<div class="collapse navbar-collapse navbar-left">
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">支持中心</a></li>
+				<li><a href="#">价格</a></li>
+				<li><a href="#">成功案例</a></li>
+				<li><a href="#">社区</a></li>
+			</ul>
+		</div>
+		<div class="nav navbar-nav navbar-right myloin">
+			<a href="#" class="navbar-text navbar-link">微博登录</a>
+			<a class="navbar-text">|</a>
+			<a href="#" class="navbar-text navbar-link">微博注册</a>
+		</div>
+	</div>
+</nav>
+<!-- 轮播图 -->
+<div class="carousel slide" id="carousel" data-ride="carousel" style="margin-top:50px;">
+	<!-- 轮播标志小圆点 -->
+	 <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#carousel"></li>
+        <li data-slide-to="1" data-target="#carousel"></li>
+        <li data-slide-to="2" data-target="#carousel"></li>
+    </ol>
+	<!-- 图片 -->
+	<div class="carousel-inner img">
+		<div class="item active">
+			<a href="#"><img src="img/1.jpg"></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="img/2.jpg"></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="img/1.jpg"></a>
+		</div>
+		<!-- 左右按钮 -->
+	<a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+	</div>
+</div>
+	
+<!-- 网页主体 -->
+<div class="container">
+	<div class="cont clearfix">
+		<div class="col-md-4 col-xs-12 text-center">
+			<img src="img/cont1.png" class="mying">
+			<h2 class="mysea">SAE</h2>
+			<p>云应用</p>
+		</div>
+		<div class="col-md-8 col-xs-12">
+			<h3>应用开发、优化及运行的PaaS云计算平台</h3>
+			<p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+			<ul class="col-md-6 col-xs-12">
+				<li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                <li>沙箱技术隔离应用</li>
+                <li>无需运维管理与架构设计</li>
+			</ul>
+			<ul class="col-md-6 col-xs-12">
+				<li>防火墙防止攻击</li>
+                <li>99.95%SLA，首批可信云认证</li>
+                <li>免费配额，零成本创业</li>
+			</ul>
+			<a href="#" class="btn btn-primary">了解详情</a>
+		</div>
+	</div>
+
+	<div class="cont clearfix">
+		<div class="col-md-4 col-xs-12 col-md-push-8 text-center">
+			<img src="img/cont2.png" class="mying">
+			<h2 class="mysea">SAE</h2>
+			<p>云应用</p>
+		</div>
+		<div class="col-md-8 col-xs-12 col-md-pull-4">
+			<h3>应用开发、优化及运行的PaaS云计算平台</h3>
+			<p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+			<ul class="col-md-6 col-xs-12">
+				<li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                <li>沙箱技术隔离应用</li>
+                <li>无需运维管理与架构设计</li>
+			</ul>
+			<ul class="col-md-6 col-xs-12">
+				<li>防火墙防止攻击</li>
+                <li>99.95%SLA，首批可信云认证</li>
+                <li>免费配额，零成本创业</li>
+			</ul>
+			<a href="#" class="btn btn-primary">了解详情</a>
+		</div>
+	</div>
+
+	<div class="cont clearfix">
+		<div class="col-md-4 col-xs-12  text-center">
+			<img src="img/cont3.png" class="mying">
+			<h2 class="mysea">SAE</h2>
+			<p>云应用</p>
+		</div>
+		<div class="col-md-8 col-xs-12 ">
+			<h3>应用开发、优化及运行的PaaS云计算平台</h3>
+			<p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+			<ul class="col-md-6 col-xs-12">
+				<li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                <li>沙箱技术隔离应用</li>
+                <li>无需运维管理与架构设计</li>
+			</ul>
+			<ul class="col-md-6 col-xs-12">
+				<li>防火墙防止攻击</li>
+                <li>99.95%SLA，首批可信云认证</li>
+                <li>免费配额，零成本创业</li>
+			</ul>
+			<a href="#" class="btn btn-primary">了解详情</a>
+		</div>
+	</div>
+
+	<div class="cont clearfix">
+		<div class="col-md-4 col-xs-12 col-md-push-8 text-center">
+			<img src="img/cont4.png" class="mying">
+			<h2 class="mysea">SAE</h2>
+			<p>云应用</p>
+		</div>
+		<div class="col-md-8 col-xs-12 col-md-pull-4">
+			<h3>应用开发、优化及运行的PaaS云计算平台</h3>
+			<p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+			<ul class="col-md-6 col-xs-12">
+				<li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                <li>沙箱技术隔离应用</li>
+                <li>无需运维管理与架构设计</li>
+			</ul>
+			<ul class="col-md-6 col-xs-12">
+				<li>防火墙防止攻击</li>
+                <li>99.95%SLA，首批可信云认证</li>
+                <li>免费配额，零成本创业</li>
+			</ul>
+			<a href="#" class="btn btn-primary">了解详情</a>
+		</div>
+	</div>
+
+	<div class="cont clearfix">
+		<div class="col-md-4 col-xs-12  text-center">
+			<img src="img/cont5.png" class="mying">
+			<h2 class="mysea">SAE</h2>
+			<p>云应用</p>
+		</div>
+		<div class="col-md-8 col-xs-12 ">
+			<h3>应用开发、优化及运行的PaaS云计算平台</h3>
+			<p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+			<ul class="col-md-6 col-xs-12">
+				<li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                <li>沙箱技术隔离应用</li>
+                <li>无需运维管理与架构设计</li>
+			</ul>
+			<ul class="col-md-6 col-xs-12">
+				<li>防火墙防止攻击</li>
+                <li>99.95%SLA，首批可信云认证</li>
+                <li>免费配额，零成本创业</li>
+			</ul>
+			<a href="#" class="btn btn-primary">了解详情</a>
+		</div>
+	</div>
+</div>
+
+<!-- 视频 -->
+<div class="container">
+	<div class="video" style="margin-top:30px;">
+		<a href="#"><img src="img/video.png" class="img-responsive"></a>
+	</div>
+</div>
+
+<!-- 产品特色 -->
+<div class="container prodect">
+
+	<h3>产品特色</h3>
+
+	<div class="row">
+		<div class="col-md-3 col-xs-6">
+			<div class="text-center">
+				<img src="img/icon1.png">
+				<p>安全可靠</p>
+			</div>
+			<p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<div class="text-center">
+				<img src="img/icon2.png">
+				<p>安全可靠</p>
+			</div>
+			<p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<div class="text-center">
+				<img src="img/icon3.png">
+				<p>安全可靠</p>
+			</div>
+			<p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<div class="text-center">
+				<img src="img/icon4.png">
+				<p>安全可靠</p>
+			</div>
+			<p>多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+		</div>
+	</div>
+</div>
+
+<!-- 成功案例 -->
+<div class="container">
+	<h3>成功案例</h3>
+	<div class="row">
+		<div class="col-md-5 col-xs-12">
+			<a href="#">
+				<img class="img-responsive" src="img/typical.png"></img>
+			</a>
+		</div>
+		<div class="col-md-7 col-xs-12">
+			<p class="myP" id="myP">SAE作为公有云服务，其整体架构具有高可靠性和高安全性，并具备专业的团队来负责安全及运营维护工作，因而极大地简化了项目组部署和维护工作，使得项目组能集中精力于核心业务的开发，为用户提供更好的体验。</p>
+		</div>
+	</div>
+</div>
+
+<!-- 网页尾部 -->
+<div class="footer container" style="margin-top:30px;">
+	<div class="row">
+		<div class="col-md-2 col-xs-6">
+			<h4>产品</h4>
+			<ul class="list-unstyled">
+				<li><a href="#">云应用 SAE1</a></li>
+				<li><a href="#">云应用 SAE2</a></li>
+				<li><a href="#">云应用 SAE3</a></li>
+				<li><a href="#">云应用 SAE4</a></li>
+				<li><a href="#">云应用 SAE5</a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-2 col-xs-6">
+			<h4>支持中心</h4>
+			<ul class="list-unstyled">
+				<li><a href="#">产品文档</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">工单</a></li>
+                <li><a href="#">账户等级</a></li>
+                <li><a href="#">新浪云论坛</a></li>
+                <li><a href="#">学习资料</a></li>
+                <li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-2 col-xs-6">
+			<h4>成功案例</h4>
+			<ul class="list-unstyled">
+				<li><a href="#">游戏</a></li>
+                <li><a href="#">移动</a></li>
+                <li><a href="#">教育</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">社交</a></li>
+                <li><a href="#">传统行业</a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-2 col-xs-6">
+			 <h4>关注我们</h4>
+			<ul class="list-unstyled">
+				 <li><a href="#">招聘信息</a></li>
+                <li><a href="#">备案指引</a></li>
+                <li><a href="#">用户协议</a></li>
+                <li><a href="#">信息举报</a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-2 col-xs-12">
+			<h4>关于新浪云</h4>
+			<p>掌上SAE客户端</p>
+			<img src="img/sao.png">
+		</div>
+
+		<div class="col-md-2 col-xs-6">
+			<h4>可信云认证</h4>
+			<img src="img/kexinyun.png">
+			<a href="#">
+				<small>对象储存服务 NO: 02005</small>
+			</a><br>
+			<a href="#">
+				<small>对象储存服务 NO: 02005</small>
+			</a><br>
+			<a href="#">
+				<small>对象储存服务 NO: 02005</small>
+			</a>
+		</div>
+	</div>
+	<hr>
+	<p class="text-center">Copyright © 方权. <a href="#">京ICP证000001-001</a></p>
+</div>
+
+</div>
+</body>
+</html>
